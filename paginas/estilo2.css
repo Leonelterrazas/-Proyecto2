@@ -1,0 +1,205 @@
+*{
+    font-family: 'Varela Round', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Login*/
+body{
+    background-image: url(../img/matrix.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    background-attachment: fixed;
+}
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+.contenedor-menu{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja-trasera{
+    margin: auto;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter:blur(7px);
+    background-color: rgba(0, 0, 0, 0.445);
+}
+.caja-trasera div{
+    margin: 100px 40px;
+    color: #f3f3f3;
+    transition: all 500ms;    
+}
+
+.caja-trasera div p,
+.caja-trasera div button{
+    margin-top: 30px;
+}
+.caja-trasera div h2{
+    font-weight: 400;
+    font-size: 26px;
+}
+.caja-trasera button{
+    padding: 15px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    transition: all 300ms;
+}
+.caja-trasera button:hover{
+    background-color: #fff;
+    color: rgb(15, 15, 15);
+}
+.caja-trasera-login input{
+    background: none;
+    background: transparent;
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+.caja-trasera-login input:focus{
+    background: none;
+}
+::placeholder{
+    color: #dcdcdc;
+}
+
+
+/*barra de navegación*/
+
+
+header{
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    background-color: rgb(0, 0, 0,0.5);
+}
+.menu-container{
+    display: flex;
+    max-width: 1200px;
+    height: 100%;
+    margin:auto;
+}
+
+.logo{
+    display: flex;
+    height: 100px;
+    text-align: center;
+}
+
+.logo img{
+    padding-bottom: 20px;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    text-align: center;
+}
+
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    padding:27px 0;
+    list-style: none;
+    margin-left: 40px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight:600;
+    color: #f3f3f3;
+}
+#selector:hover{
+    background-color: #000;
+    border-radius:50px;
+    padding: 5px 5px;
+}
+.logo img:hover{
+    transition:transform;
+    transform: rotate(10deg);
+    cursor: pointer;
+}
+
+
+/*cover*/
+.container_cover{
+    width: 100%;
+    height: 800px;
+}
+.cover{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-cover text{
+    max-width: 400px;
+    position: absolute;
+}
+
+.text h1{
+    font-size:30px;
+    font-weight:700;
+}
+.text p{
+    font-size: 16px;
+    margin-top: 35px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.svg{
+    width: 50em;
+}
+/*FOOTER*/
+.footer-content{
+    height: 12vh;
+    background-color:#207594;
+}
+footer{
+    margin-top: 17em;
+    grid-area: footer;
+    position: relative;
+}
+.p{
+    font-size: 26px;
+    color: #000;
+    text-align: center;
+}
+.redes{
+    width: 60px;
+    justify-content: space-around;
+}
+@media (max-width:800px){
+    .foto-imagen{
+        display: none;
+    } .menu ul li a{
+        font-size: 12px;
+    }
+    .logo{
+        display: none;
+    } .contenedor-menu{
+        margin-bottom:100px;
+        width: 100%;
+    } .footer-content{
+        height: 15vh;
+    }
+}
+
